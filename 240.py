@@ -5,5 +5,6 @@ print(x(50,5))
 
 #2-Return the maximum of three arguments a, b, and c
 
-x = lambda a,b,c,d :a * b + c * d
+x = lambda a,b,c,d :max(a,b,c,d)
 print(x(20,12,33,4))
+
