@@ -1,15 +1,10 @@
-#The filter() function
-#The filter() function filters elements from an iterable
-# based on a specified condition.
-# It only keeps elements for which the function returns True.
+#read only parts of the file
 
+#by default the read() method returns the whole text,
 
-#Syntax
+# but you can also specify how many characters you want to return:
 
-#   filter(function, iterable)
-# function: The function to use as the condition, returning True or False.
-# iterable: The collection of items to filter.
+#return the 5 first characters of the file ?
 
-numbers = [1,2,3,4,5,6,7,8,9]
-even_numbers =list(filter(lambda x:x % 2 == 0,numbers))
-print(even_numbers)
+f = open("demo file.txt","r")
+print(f.read(5))

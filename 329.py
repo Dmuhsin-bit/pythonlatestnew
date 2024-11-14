@@ -9,5 +9,4 @@ try:
     finally:
         f.close()
 except:
-    print("something went wrong when opening the file ")
-    
+    raise ("something went wrong when opening the file ")
